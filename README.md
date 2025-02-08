@@ -40,18 +40,22 @@ Aplikasi berbasis web untuk mengelola pemesanan kendaraan dengan sistem persetuj
 ```bash
 git clone https://github.com/username/repo.git
 cd repo
-
-### 2️⃣ Install Dependency
+```
+### 2️⃣ **Install Dependency**
 ```bash
 composer install
 npm install && npm run dev
-
-3️⃣ Konfigurasi Environment
+```
+### 3️⃣ **Konfigurasi Environment**
+```bash
 cp .env.example .env
 php artisan key:generate
-
-4️⃣ Migrasi dan Seeder
+```
+### 4️⃣ **Migrasi dan Seeder**
+```bash
 php artisan migrate --seed
-
-5️⃣ Jalankan Aplikasi
+```
+### 5️⃣ **Jalankan Aplikasi**
+```bash
 php artisan serve
+```
