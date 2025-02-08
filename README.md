@@ -38,7 +38,7 @@ Aplikasi berbasis web untuk mengelola pemesanan kendaraan dengan sistem persetuj
 ## 🛠 Instalasi dan Konfigurasi
 ### 1️⃣ **Clone Repository**
 ```bash
-git clone https://github.com/username/repo.git
+git clone https://github.com/andiajisaputra3/Apps-Booking-Vehicle.git
 cd repo
 ```
 ### 2️⃣ **Install Dependency**
