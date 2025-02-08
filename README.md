@@ -19,18 +19,21 @@ Aplikasi berbasis web untuk mengelola pemesanan kendaraan dengan sistem persetuj
 - **Driver & Vehicle** → Manajemen data driver dan kendaraan.
 - **Approval** → Persetujuan pemesanan oleh Manager & Supervisor.
 
-## Role & Akses
-Superadmin → Memiliki akses penuh ke seluruh fitur.
-Admin → Bertugas membuat pemesanan kendaraan.
-Manager → Bertugas melakukan Approval Level 1.
-Supervisor → Bertugas melakukan Approval Level 2.
+## 🧑‍💼 Role & Akses
+| Role        | Deskripsi Akses |
+|------------|----------------|
+| **Superadmin** | Memiliki akses penuh ke seluruh fitur. |
+| **Admin** | Bertugas membuat pemesanan kendaraan. |
+| **Manager** | Bertugas melakukan **Approval Level 1**. |
+| **Supervisor** | Bertugas melakukan **Approval Level 2**. |
 
-## Akun
-Email	                Password
-superadmin@gmail.com	password
-admin@gmail.com	        password
-manager@gmail.com	    password
-supervisor@gmail.com	password
+## 🔑 Akun Default
+| Role        | Email                     | Password  |
+|------------|---------------------------|-----------|
+| Superadmin | `superadmin@gmail.com`     | `password`  |
+| Admin      | `admin@gmail.com`          | `password`  |
+| Manager    | `manager@gmail.com`        | `password`  |
+| Supervisor | `supervisor@gmail.com`     | `password`  |
 
 ## 🛠 Instalasi dan Konfigurasi
 ### 1️⃣ **Clone Repository**
@@ -38,12 +41,17 @@ supervisor@gmail.com	password
 git clone https://github.com/username/repo.git
 cd repo
 
+### 2️⃣ Install Dependency
+```bash
 composer install
 npm install && npm run dev
 
+3️⃣ Konfigurasi Environment
 cp .env.example .env
 php artisan key:generate
 
+4️⃣ Migrasi dan Seeder
 php artisan migrate --seed
 
+5️⃣ Jalankan Aplikasi
 php artisan serve
